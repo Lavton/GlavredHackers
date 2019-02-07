@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>А вдруг я программист?</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style type="text/css">
+			.reveal {
+  /*font-family: "Open Sans", sans-serif;*/
+			  font-size: 30px;
+			  
+			}
+
+			.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+				text-transform: none;
+			}
+
+a.mlnk {
+  /*font-weight: 700;*/
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  background: rgb(64,199,129);
+  /*box-shadow: 0 -3px rgb(53,167,110) inset;*/
+  transition: 0.2s;
+} 
+/*a.mlnk:hover { background: rgb(53, 167, 110); }*/
+a.mlnk:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+a.mlnk.no {
+	background: rgb(200, 64, 12);
+}
+
+.reveal pre.inl {
+	display: inline;
+}
+.reveal pre.inl code.hljs {
+  display: inline;
+}
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h3>А вдруг я программист? </h3>
+
+					<p>Программирование - безумно сложная штука, в которую лучше не лезть? Вовсе нет. Его основы настолько просты, что вы их уже знаете. Давайте проверим?<br/><br/> <a href="#/1" class="mlnk">Проверить!</a></p>
+
+					</section>
+				<section>
+					<h3>Понимаете, что делает этот код?</h3>
+					<h5>Пример 1 из 3</h5>
+
+					<pre><code class="hljs python" data-trim>
+						print("Hello, world!")
+					</code></pre>
+					<a href="#/3" class="mlnk">Понимаю</a><a href="#/2" class="mlnk no">Сложно!</a><br> <br>
+
+					<i>Пример на языке Python</i>
+
+				</section>
+				<section><h3>Разберём по косточкам</h3>
+					<pre><code class="hljs python" data-trim>
+						print("Hello, world!")
+					</code></pre>
+
+				<ol>
+					<li><pre class="inl"><code class="hljs python" data-trim>
+						print
+					</code></pre> от английского "print" - "печатать"</li>
+					<li><pre class="inl"><code class="hljs python" data-trim>
+						"Hello, world!"
+					</code></pre> строка, которая будет напечатана</li>
+				</ol>
+				Скобки после <pre class="inl"><code class="hljs python" data-trim>
+						print
+					</code></pre> - показывают к чему она относится. Как в школе на математике было f(x). То было функцией. И <pre class="inl"><code class="hljs python" data-trim>
+						print
+					</code></pre> зовётся <b>функцией</b>.
+
+					<p>Код сверху говорит компьютеру: "напечатай строку "Hello world".</p>
+					<a href="#/4" class="mlnk">Идём дальше</a>
+					</section>
+
+					<section>
+						<h3>Теперь вы умеете выводить текст!</h3>
+						<pre><code class="hljs python" data-trim>
+						print("Hello, world!")
+					</code></pre>
+					<p>Код сверху говорит компьютеру: "напечатай строку "Hello world".</p>  <p><pre class="inl"><code class="hljs python" data-trim>
+						print
+					</code></pre> зовётся <b>функцией</b>.</p>
+<a href="#/4" class="mlnk">Идём дальше</a>
+					</section>
+
+					<section>
+						<h3>Понимаете, что делает этот код?</h3>
+						<h5>Пример 2 из 3</h5>
+
+					<pre><code class="hljs python" data-trim>
+						fruits = ["яблоко", "груша", "манго"]
+						print(sorted(fruits))					</code></pre>
+					<a href="#/6" class="mlnk">Понимаю</a><a href="#/5" class="mlnk no">Сложно!</a>
+					</section>
+
+					<section><h3>Разберём по косточкам</h3>
+<pre><code class="hljs python" data-trim>
+						fruits = ["яблоко", "груша", "манго"]
+						print(sorted(fruits))					</code></pre>
+						<ol>
+							<li><pre class="inl"><code class="hljs python" data-trim>fruits = ["яблоко", "груша", "манго"]</code></pre> мы говорим: каждый раз писать <b>список</b> <pre class="inl"><code class="hljs python" data-trim>["яблоко", "груша", "манго"]</code></pre> очень долго! Пусть теперь мы будем писать <pre class="inl"><code class="hljs python" data-trim>fruits</code></pre>, а компьютер сам поймёт, что за фрукты там! <br><pre class="inl"><code class="hljs python" data-trim>fruits</code></pre> зовётся <b>Переменной</b>.</li>
+							<li><pre class="inl"><code class="hljs python" data-trim>print(sorted(fruits))</code></pre> Что-то печатает, как мы поняли из первого пример. Но что? <pre class="inl"><code class="hljs python" data-trim>sorted()</code></pre> от английского "sort" - сортировать по порядку.</li>
+						</ol>
+						<p>Код сверху говорит копьютеру: "выведи список фруктов в алфавитном порядке".</p>
+						<a href="#/7" class="mlnk">Идём дальше</a>
+					</section>
+
+					<section><h3>Теперь вы умеете создавать переменные!</h3>
+						<pre><code class="hljs python" data-trim>
+						fruits = ["яблоко", "груша", "манго"]
+						print(sorted(fruits))					</code></pre>
+						
+						<p>Код сверху говорит компьютеру: "выведи список фруктов в алфавитном порядке".</p>
+						<p><pre class="inl"><code class="hljs python" data-trim>fruits</code></pre> зовётся <b>Переменной</b>.</p>
+						<a href="#/7" class="mlnk">Идём дальше</a>
+
+					</section>
+
+					<section>
+						<h3>Понимаете, что делает этот код?</h3>
+						<h5>Пример 3 из 3</h5>
+
+					<pre><code class="hljs python" data-trim>
+						fruits = ["яблоко", "груша", "манго"]
+						for fruit in fruits:
+						    if fruit == "груша":
+						        print("я нашёл грушу!")
+						    else:
+						        print("это не груша!")
+					</code></pre>
+					<a href="#/9" class="mlnk">Понимаю</a><a href="#/8" class="mlnk no">Сложно!</a>
+					</section>
+
+					<section>
+						<h3>Разберём по косточкам</h3>
+						<pre><code class="hljs python" data-trim>
+						fruits = ["яблоко", "груша", "манго"]
+						for fruit in fruits:
+						    if fruit == "груша":
+						        print("я нашёл грушу!")
+						    else:
+						        print("это не груша!")
+						</code></pre>
+						<ol>
+							<li><pre class="inl"><code class="hljs python" data-trim>for fruit in fruits:</code></pre> использует английские слова "for" - "для", "in" - "в". Читаем: "Для fruit в fruits:". <pre class="inl"><code class="hljs python" data-trim>for</code></pre> создаёт <b>цикл</b>.</li>
+							<li><pre class="inl"><code class="hljs python" data-trim>if fruit == "груша":</code></pre> if переводится как "если": "если этот фрукт это груша"</li>
+							<li><pre class="inl"><code class="hljs python" data-trim>else:</code></pre> - "иначе" - "если этот фрукт не груша". <pre class="inl"><code class="hljs python" data-trim>if</code></pre> и <pre class="inl"><code class="hljs python" data-trim>else</code></pre>  создают <b>ветвление</b>.</li>
+						</ol>
+						<p>Код сверху говорит компьютеру: "возьми список из трёх фруктов, пройди по ним и напечатай, груша это или нет?"</p>
+						<a href="#/10" class="mlnk">Идём дальше</a>
+					</section>
+					<section><h3>Теперь вы умеете делать циклы и условия!</h3>
+						<pre><code class="hljs python" data-trim>
+						fruits = ["яблоко", "груша", "манго"]
+						for fruit in fruits:
+						    if fruit == "груша":
+						        print("я нашёл грушу!")
+						    else:
+						        print("это не груша!")
+						</code></pre>
+						<p>Код сверху говорит компьютеру: "возьми список из трёх фруктов, пройди по ним и напечатай, груша это или нет?"</p>
+						<p><pre class="inl"><code class="hljs python" data-trim>for</code></pre> создаёт <b>цикл</b>, а <pre class="inl"><code class="hljs python" data-trim>if</code></pre> и <pre class="inl"><code class="hljs python" data-trim>else</code></pre>  создают <b>ветвление</b>.</p>
+						<a href="#/10" class="mlnk">Идём дальше</a>
+
+					</section>
+
+					<section><h3>Так ли сложно программирование?</h3>
+						<p>Программировать - всё равно что говорить на диалекте английского. Язык Python, на котором были примеры создавался специально, чтобы писать "естественно".</p>
+						<p><a href="#/11" class="mlnk">И что, всё программирование такое простое?</a></p><br>
+						<p><a href="#/12" class="mlnk">Ладно, а мне-то это зачем?</a></p><br>
+						<p><a href="#/14" class="mlnk">Вау, а с чего начать изучать это программирование?</a></p>
+					</section>
+					<section><h3>Всё программирование такое простое?</h3>
+						<p>Нет, конечно нет. Существует огромное количество концепций, языков, идей, входящих в "программирование".</p><p> Но разве вы отказываетесь изучать слова, если не собираетесь написать "Войну и Мир"? Или арифметику, если не хотите стать математиком-профи?</p>
+						<p>С программированием точно так же: не обязательно стремиться в "Яндекс", чтобы начать писать код!</p>
+						<p><a href="#/12" class="mlnk">Зачем?</a></p><br>
+						<p><a href="#/14" class="mlnk">Вау, а с чего начать изучать это программирование?</a></p>
+					</section>
+
+					<section>
+						<h3>Зачем мне начинать программировать?</h3>
+						<p>Чтобы избавиться от рутины. Бывали ли у вас подобные задачи?</p>
+						<ul>
+						<li>Вам нужно скачать книгу с интернета, а она доступна только онлайн?</li>
+						<li>Вы хотите подсчитать, кто из ваших друзей чаще всего "лайкает" ваши посты?</li>
+						<li>Вы на работе делаете скучные вещи? Копируете текст из одной таблицы в другую? отправляете шаблонные ответы? Пишите один и тот же пост в 5 соцсетей?</li>
+						<li>Вы хотите создать необычную презентацию (как эта?)</li>
+						</ul>
+						<p><a href="#/13" class="mlnk">Да, что-то совпало! И что?</a></p>
+					</section>
+					<section><h3>Вам стоит изучить программирование!</h3>
+						<p>Программирование - вот что вам нужно. Да, вы потратите время на его понимание. <br>
+						Но если вы напишите программу, которая избавит вас от регулярных повторяющихся задач - это время окупится. И освободит вас для нового.</p>
+						<p>Хотите узнать больше, как помогает программирование? Посмотрите <a href="https://www.youtube.com/watch?v=UB_LohPYMYA">видео</a>.</p>
+
+						<p><a href="#/14" class="mlnk">Вау, а с чего начать изучать это программирование?</a></p><br>
+						<p><a href="#/11" class="mlnk">И что, всё программирование такое простое?</a></p>
+					</section>
+					<section>
+						<h3>С чего начать изучать?</h3>
+						<p>Если просто читать или смотреть лекции - вы потратите время впустую, ничего не запомня. Чтобы научиться - надо выполнять задания. Ресурс, который я рекомендую - <a href="http://stepik.org">Stepik</a>.</p>
+						<ol>
+							Stepik
+							<li>Бесплатный</li>
+							<li>С короткими лекциями</li>
+							<li>С заданиями после каждого блока</li>
+						</ol>
+
+						<p>P.S. <a href="#/15"> откуда появилась эта "статья?"</a></p>
+					</section>
+					<section>
+						<p>Мне всегда нравилось программировать и я пытался донести, что это чаще "ремесло", чем "искусство". Любой может его освоить на уровне, достаточным для избавления от рутины.</p>
+						<p>Непосредственным стимулом является <a href="https://challenge.glvrd.ru/hackers.html"> Вызов Главреда</a>. Который я, Антон Лиознов, принял.</p>
+					</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				transition: 'convex',
+				controls: false,
+				// keyboard: false,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
